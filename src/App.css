@@ -1,0 +1,371 @@
+:root {
+  --color-rose-900: #260f08;
+  --color-rose-500: #87635a;
+  --color-rose-400: #ad8a85;
+  --color-rose-300: #caafa7;
+  --color-rose-100: #f5eeec;
+  --color-rose-50: #fcf8f6;
+  --color-green: #1ea575;
+  --color-red: #c73b0f;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui;
+  background: var(--color-rose-50, #fcf8f6);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+  padding: 24px;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+  border-radius: 6px;
+}
+
+.productList img {
+  border-radius: 8px;
+  width: 327px;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.addProduct {
+  position: relative;
+  bottom: 30px;
+  left: 30%;
+  display: flex;
+  align-items: center;
+  padding: 12.5px 28px 12.5px 28px;
+  border: 1px solid #ad8a85;
+  border-radius: 50px;
+  background-color: #fff;
+  font-weight: 600;
+  line-height: 18.52px;
+  text-align: left;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.container h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: var(--color-rose-900, #260f08);
+  margin-bottom: 32px;
+}
+
+.info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+  text-align: left;
+  color: var(--color-rose-900, #260f08);
+  margin-bottom: 4px;
+}
+
+.info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+  text-align: left;
+  color: var(--color-red, #c73b0f);
+  margin-bottom: 4px;
+}
+
+.productList p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  text-align: left;
+  color: var(--color-rose-500, #87635a);
+  margin-bottom: 4px;
+}
+
+.basketCart {
+  background: #fff;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.basketCart h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31.75px;
+  text-align: left;
+  color: var(--color-red, #c73b0f);
+}
+
+#card h3 {
+  font-weight: 700;
+  line-height: 31.75px;
+  text-align: left;
+  color: var(--color-red, #c73b0f);
+}
+
+#card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+  text-align: left;
+  color: var(--color-red, #c73b0f);
+  margin-bottom: 4px;
+}
+
+.productBox  {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.basket h3 {
+  color: var(--color-rose-900, #260f08);
+  font-weight: 600;
+  line-height: 18.52px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.productBox {
+  border-bottom: 1px solid var(--color-rose-100, #f5eeec);
+}
+
+.productBox h4 {
+  color: var(--color-red, #c73b0f);
+  font-weight: 600;
+  line-height: 18.52px;
+  text-align: left;
+}
+
+.productBox span {
+  color: var(--color-rose-500, #87635a);
+  font-weight: 600;
+  line-height: 18.52px;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.basket {
+  border-bottom: 1px solid #f5eeec;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.basketBox {
+  margin-bottom: 16px;
+}
+.basketCart {
+  padding: 24px;
+}
+.basketCart img {
+  margin-bottom: 24px;
+}
+.salesTotal {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.75px;
+  text-align: left;
+  color: var(--color-rose-900, #260f08);
+}
+
+.orderTotal h6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--color-rose-900, #260f08);
+  font-weight: 400;
+  line-height: 18.52px;
+  text-align: left;
+  margin-bottom: 100px;
+  padding-block: 24px;
+}
+
+
+
+#addBtn {
+  background: var(--color-red, #c73b0f);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  padding: 16px 113px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#modal {
+  margin: 0 auto;
+  padding: 40px 24px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-rose-900, #260f08);
+  margin-top: 50px;
+  border: none;
+}
+
+#modal h2 {
+  color: var(--color-rose-900, #260f08);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+
+#modal p {
+  color: var(--color-rose-500, #87635a);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.17px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+#modal img {
+  margin-bottom: 24px;
+}
+
+#resetBtn {
+  background: var(--color-red, #c73b0f);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+  text-align: left;
+  padding: 16px 194px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#modalList {
+  margin-bottom: 49px;
+  background: var(--color-rose-50, #FCF8F6);
+padding: 24px;
+}
+
+.orderSales {
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+#modal h6 {
+  color: var(--color-rose-900, #260f08);
+  font-weight: 400;
+  line-height: 18.52px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+#orderSalesTotal {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.75px;
+  text-align: left;
+}
+
+.deleteBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/* -------------------------------TABLETTT */
+@media (width > 767px) {
+  .container {
+    width: 768px;
+    padding: 40px;
+  }
+
+  .productList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+    border-radius: 6px;
+  }
+
+  #modal {
+    padding: 40px 40px;
+
+  }
+}
+
+/* ------------------------------------------DESKTOP */
+
+@media (width > 1023px) {
+  .container {
+    width: 1216px;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .dessertContainer {
+    display: flex;
+    align-items: flex-start;
+  }
+  .productList img {
+    width: 250px;
+  }
+
+  .addProduct {
+    position: relative;
+    left: 17%;
+  }
+}
